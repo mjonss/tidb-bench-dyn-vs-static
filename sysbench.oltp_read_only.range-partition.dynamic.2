@@ -1,0 +1,57 @@
+ma 31 mei 2021  2:14:03 CEST
+sysbench 1.1.0-ead2689 (using bundled LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 64
+Report intermediate results every 10 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 10s ] thds: 64 tps: 1433.18 qps: 22992.04 (r/w/o: 20119.29/0.00/2872.76) lat (ms,95%): 55.82 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 64 tps: 1336.64 qps: 21383.40 (r/w/o: 18710.11/0.00/2673.29) lat (ms,95%): 59.99 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 64 tps: 1400.88 qps: 22405.95 (r/w/o: 19604.29/0.00/2801.66) lat (ms,95%): 56.84 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 64 tps: 1351.79 qps: 21620.99 (r/w/o: 18917.60/0.00/2703.39) lat (ms,95%): 61.08 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 64 tps: 1345.80 qps: 21552.19 (r/w/o: 18860.29/0.00/2691.90) lat (ms,95%): 59.99 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 64 tps: 1345.70 qps: 21519.84 (r/w/o: 18828.53/0.00/2691.30) lat (ms,95%): 59.99 err/s: 0.00 reconn/s: 0.00
+[ 70s ] thds: 64 tps: 1350.10 qps: 21606.57 (r/w/o: 18906.68/0.00/2699.90) lat (ms,95%): 58.92 err/s: 0.00 reconn/s: 0.00
+[ 80s ] thds: 64 tps: 1347.60 qps: 21569.80 (r/w/o: 18874.20/0.00/2695.60) lat (ms,95%): 59.99 err/s: 0.00 reconn/s: 0.00
+[ 90s ] thds: 64 tps: 1347.71 qps: 21551.61 (r/w/o: 18856.30/0.00/2695.31) lat (ms,95%): 59.99 err/s: 0.00 reconn/s: 0.00
+[ 100s ] thds: 64 tps: 1349.50 qps: 21596.24 (r/w/o: 18897.35/0.00/2698.89) lat (ms,95%): 59.99 err/s: 0.00 reconn/s: 0.00
+[ 110s ] thds: 64 tps: 1348.80 qps: 21582.28 (r/w/o: 18884.68/0.00/2697.60) lat (ms,95%): 59.99 err/s: 0.00 reconn/s: 0.00
+[ 120s ] thds: 64 tps: 1352.70 qps: 21631.66 (r/w/o: 18926.06/0.00/2705.59) lat (ms,95%): 59.99 err/s: 0.00 reconn/s: 0.00
+SQL statistics:
+    queries performed:
+        read:                            2284380
+        write:                           0
+        other:                           326340
+        total:                           2610720
+    transactions:                        163170 (1359.36 per sec.)
+    queries:                             2610720 (21749.76 per sec.)
+    ignored errors:                      0      (0.00 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+Throughput:
+    events/s (eps):                      1359.3599
+    time elapsed:                        120.0344s
+    total number of events:              163170
+
+Latency (ms):
+         min:                                   15.33
+         avg:                                   47.07
+         max:                                  208.11
+         95th percentile:                       58.92
+         sum:                              7681037.04
+
+Threads fairness:
+    events (avg/stddev):           2549.5312/7.82
+    execution time (avg/stddev):   120.0162/0.01
+
+
+real	2m0,068s
+user	0m27,854s
+sys	0m35,429s
+ma 31 mei 2021  2:16:03 CEST
