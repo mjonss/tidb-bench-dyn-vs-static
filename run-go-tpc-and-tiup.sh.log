@@ -1,0 +1,425 @@
+
+wo  2 jun 2021  2:02:31 CEST
+Starting component `cluster`: /home/mattias/.tiup/components/cluster/v1.4.4/tiup-cluster clean prune-bench --all -y
++ [ Serial ] - SSHKeySet: privateKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa, publicKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa.pub
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [ Serial ] - StopCluster
+Stopping component alertmanager
+	Stopping instance 192.168.2.62
+	Stop alertmanager 192.168.2.62:9093 success
+Stopping component grafana
+	Stopping instance 192.168.2.62
+	Stop grafana 192.168.2.62:3000 success
+Stopping component prometheus
+	Stopping instance 192.168.2.62
+	Stop prometheus 192.168.2.62:9090 success
+Stopping component tidb
+	Stopping instance 192.168.2.62
+	Stop tidb 192.168.2.62:4000 success
+Stopping component tikv
+	Stopping instance 192.168.2.62
+	Stop tikv 192.168.2.62:20160 success
+Stopping component pd
+	Stopping instance 192.168.2.62
+	Stop pd 192.168.2.62:2379 success
+Stopping component node_exporter
+Stopping component blackbox_exporter
++ [ Serial ] - CleanupCluster
+Cleanup instance 192.168.2.62
+Cleanup 192.168.2.62 success
+Cleanup cluster `prune-bench` successfully
+Starting component `cluster`: /home/mattias/.tiup/components/cluster/v1.4.4/tiup-cluster start prune-bench
+Starting cluster prune-bench...
++ [ Serial ] - SSHKeySet: privateKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa, publicKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa.pub
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [ Serial ] - StartCluster
+Starting component pd
+	Starting instance pd 192.168.2.62:2379
+	Start pd 192.168.2.62:2379 success
+Starting component node_exporter
+	Starting instance 192.168.2.62
+	Start 192.168.2.62 success
+Starting component blackbox_exporter
+	Starting instance 192.168.2.62
+	Start 192.168.2.62 success
+Starting component tikv
+	Starting instance tikv 192.168.2.62:20160
+	Start tikv 192.168.2.62:20160 success
+Starting component tidb
+	Starting instance tidb 192.168.2.62:4000
+	Start tidb 192.168.2.62:4000 success
+Starting component prometheus
+	Starting instance prometheus 192.168.2.62:9090
+	Start prometheus 192.168.2.62:9090 success
+Starting component grafana
+	Starting instance grafana 192.168.2.62:3000
+	Start grafana 192.168.2.62:3000 success
+Starting component alertmanager
+	Starting instance alertmanager 192.168.2.62:9093
+	Start alertmanager 192.168.2.62:9093 success
++ [ Serial ] - UpdateTopology: cluster=prune-bench
+Started cluster `prune-bench` successfully
+
+wo  2 jun 2021  2:02:54 CEST
+
+wo  2 jun 2021  2:02:54 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc prepare -T 4 --parts 8 --warehouses 32 --partition-type 1
+wo  2 jun 2021  2:13:07 CEST
+
+wo  2 jun 2021  2:13:37 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc run -T 4 --time 10m --parts 8 --warehouses 32 --partition-type 1
+wo  2 jun 2021  2:23:37 CEST
+
+wo  2 jun 2021  2:23:37 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc check --check-all -T 4 --parts 8 --warehouses 32 --partition-type 1
+wo  2 jun 2021  2:23:38 CEST
+
+wo  2 jun 2021  2:23:38 CEST
+Starting component `cluster`: /home/mattias/.tiup/components/cluster/v1.4.4/tiup-cluster clean prune-bench --all -y
++ [ Serial ] - SSHKeySet: privateKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa, publicKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa.pub
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [ Serial ] - StopCluster
+Stopping component alertmanager
+	Stopping instance 192.168.2.62
+	Stop alertmanager 192.168.2.62:9093 success
+Stopping component grafana
+	Stopping instance 192.168.2.62
+	Stop grafana 192.168.2.62:3000 success
+Stopping component prometheus
+	Stopping instance 192.168.2.62
+	Stop prometheus 192.168.2.62:9090 success
+Stopping component tidb
+	Stopping instance 192.168.2.62
+	Stop tidb 192.168.2.62:4000 success
+Stopping component tikv
+	Stopping instance 192.168.2.62
+	Stop tikv 192.168.2.62:20160 success
+Stopping component pd
+	Stopping instance 192.168.2.62
+	Stop pd 192.168.2.62:2379 success
+Stopping component node_exporter
+Stopping component blackbox_exporter
++ [ Serial ] - CleanupCluster
+Cleanup instance 192.168.2.62
+Cleanup 192.168.2.62 success
+Cleanup cluster `prune-bench` successfully
+Starting component `cluster`: /home/mattias/.tiup/components/cluster/v1.4.4/tiup-cluster start prune-bench
+Starting cluster prune-bench...
++ [ Serial ] - SSHKeySet: privateKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa, publicKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa.pub
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [ Serial ] - StartCluster
+Starting component pd
+	Starting instance pd 192.168.2.62:2379
+	Start pd 192.168.2.62:2379 success
+Starting component node_exporter
+	Starting instance 192.168.2.62
+	Start 192.168.2.62 success
+Starting component blackbox_exporter
+	Starting instance 192.168.2.62
+	Start 192.168.2.62 success
+Starting component tikv
+	Starting instance tikv 192.168.2.62:20160
+	Start tikv 192.168.2.62:20160 success
+Starting component tidb
+	Starting instance tidb 192.168.2.62:4000
+	Start tidb 192.168.2.62:4000 success
+Starting component prometheus
+	Starting instance prometheus 192.168.2.62:9090
+	Start prometheus 192.168.2.62:9090 success
+Starting component grafana
+	Starting instance grafana 192.168.2.62:3000
+	Start grafana 192.168.2.62:3000 success
+Starting component alertmanager
+	Starting instance alertmanager 192.168.2.62:9093
+	Start alertmanager 192.168.2.62:9093 success
++ [ Serial ] - UpdateTopology: cluster=prune-bench
+Started cluster `prune-bench` successfully
+
+wo  2 jun 2021  2:24:20 CEST
+
+wo  2 jun 2021  2:24:20 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc prepare -T 4 --parts 8 --warehouses 32 --partition-type 2
+wo  2 jun 2021  5:33:39 CEST
+
+wo  2 jun 2021  5:34:09 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc run -T 4 --time 10m --parts 8 --warehouses 32 --partition-type 2
+wo  2 jun 2021  5:34:09 CEST
+
+wo  2 jun 2021  5:34:09 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc check --check-all -T 4 --parts 8 --warehouses 32 --partition-type 2
+wo  2 jun 2021  5:34:10 CEST
+
+wo  2 jun 2021  5:34:10 CEST
+Starting component `cluster`: /home/mattias/.tiup/components/cluster/v1.4.4/tiup-cluster clean prune-bench --all -y
++ [ Serial ] - SSHKeySet: privateKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa, publicKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa.pub
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [ Serial ] - StopCluster
+Stopping component alertmanager
+	Stopping instance 192.168.2.62
+	Stop alertmanager 192.168.2.62:9093 success
+Stopping component grafana
+	Stopping instance 192.168.2.62
+	Stop grafana 192.168.2.62:3000 success
+Stopping component prometheus
+	Stopping instance 192.168.2.62
+	Stop prometheus 192.168.2.62:9090 success
+Stopping component tidb
+	Stopping instance 192.168.2.62
+	Stop tidb 192.168.2.62:4000 success
+Stopping component tikv
+	Stopping instance 192.168.2.62
+	Stop tikv 192.168.2.62:20160 success
+Stopping component pd
+	Stopping instance 192.168.2.62
+	Stop pd 192.168.2.62:2379 success
+Stopping component node_exporter
+Stopping component blackbox_exporter
++ [ Serial ] - CleanupCluster
+Cleanup instance 192.168.2.62
+Cleanup 192.168.2.62 success
+Cleanup cluster `prune-bench` successfully
+Starting component `cluster`: /home/mattias/.tiup/components/cluster/v1.4.4/tiup-cluster start prune-bench
+Starting cluster prune-bench...
++ [ Serial ] - SSHKeySet: privateKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa, publicKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa.pub
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [ Serial ] - StartCluster
+Starting component pd
+	Starting instance pd 192.168.2.62:2379
+	Start pd 192.168.2.62:2379 success
+Starting component node_exporter
+	Starting instance 192.168.2.62
+	Start 192.168.2.62 success
+Starting component blackbox_exporter
+	Starting instance 192.168.2.62
+	Start 192.168.2.62 success
+Starting component tikv
+	Starting instance tikv 192.168.2.62:20160
+	Start tikv 192.168.2.62:20160 success
+Starting component tidb
+	Starting instance tidb 192.168.2.62:4000
+	Start tidb 192.168.2.62:4000 success
+Starting component prometheus
+	Starting instance prometheus 192.168.2.62:9090
+	Start prometheus 192.168.2.62:9090 success
+Starting component grafana
+	Starting instance grafana 192.168.2.62:3000
+	Start grafana 192.168.2.62:3000 success
+Starting component alertmanager
+	Starting instance alertmanager 192.168.2.62:9093
+	Start alertmanager 192.168.2.62:9093 success
++ [ Serial ] - UpdateTopology: cluster=prune-bench
+Started cluster `prune-bench` successfully
+
+wo  2 jun 2021  5:34:38 CEST
+
+wo  2 jun 2021  5:34:39 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc prepare -T 4 --parts 8 --warehouses 32 --partition-type 3
+wo  2 jun 2021  5:45:17 CEST
+
+wo  2 jun 2021  5:45:47 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc run -T 4 --time 10m --parts 8 --warehouses 32 --partition-type 3
+wo  2 jun 2021  5:55:47 CEST
+
+wo  2 jun 2021  5:55:47 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc check --check-all -T 4 --parts 8 --warehouses 32 --partition-type 3
+wo  2 jun 2021  5:55:48 CEST
+
+wo  2 jun 2021  5:55:48 CEST
+Starting component `cluster`: /home/mattias/.tiup/components/cluster/v1.4.4/tiup-cluster clean prune-bench --all -y
++ [ Serial ] - SSHKeySet: privateKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa, publicKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa.pub
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [ Serial ] - StopCluster
+Stopping component alertmanager
+	Stopping instance 192.168.2.62
+	Stop alertmanager 192.168.2.62:9093 success
+Stopping component grafana
+	Stopping instance 192.168.2.62
+	Stop grafana 192.168.2.62:3000 success
+Stopping component prometheus
+	Stopping instance 192.168.2.62
+	Stop prometheus 192.168.2.62:9090 success
+Stopping component tidb
+	Stopping instance 192.168.2.62
+	Stop tidb 192.168.2.62:4000 success
+Stopping component tikv
+	Stopping instance 192.168.2.62
+	Stop tikv 192.168.2.62:20160 success
+Stopping component pd
+	Stopping instance 192.168.2.62
+	Stop pd 192.168.2.62:2379 success
+Stopping component node_exporter
+Stopping component blackbox_exporter
++ [ Serial ] - CleanupCluster
+Cleanup instance 192.168.2.62
+Cleanup 192.168.2.62 success
+Cleanup cluster `prune-bench` successfully
+Starting component `cluster`: /home/mattias/.tiup/components/cluster/v1.4.4/tiup-cluster start prune-bench
+Starting cluster prune-bench...
++ [ Serial ] - SSHKeySet: privateKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa, publicKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa.pub
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [ Serial ] - StartCluster
+Starting component pd
+	Starting instance pd 192.168.2.62:2379
+	Start pd 192.168.2.62:2379 success
+Starting component node_exporter
+	Starting instance 192.168.2.62
+	Start 192.168.2.62 success
+Starting component blackbox_exporter
+	Starting instance 192.168.2.62
+	Start 192.168.2.62 success
+Starting component tikv
+	Starting instance tikv 192.168.2.62:20160
+	Start tikv 192.168.2.62:20160 success
+Starting component tidb
+	Starting instance tidb 192.168.2.62:4000
+	Start tidb 192.168.2.62:4000 success
+Starting component prometheus
+	Starting instance prometheus 192.168.2.62:9090
+	Start prometheus 192.168.2.62:9090 success
+Starting component grafana
+	Starting instance grafana 192.168.2.62:3000
+	Start grafana 192.168.2.62:3000 success
+Starting component alertmanager
+	Starting instance alertmanager 192.168.2.62:9093
+	Start alertmanager 192.168.2.62:9093 success
++ [ Serial ] - UpdateTopology: cluster=prune-bench
+Started cluster `prune-bench` successfully
+
+wo  2 jun 2021  5:56:14 CEST
+
+wo  2 jun 2021  5:56:14 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc prepare -T 4 --parts 8 --warehouses 32 --partition-type 4
+wo  2 jun 2021  6:06:13 CEST
+
+wo  2 jun 2021  6:06:43 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc run -T 4 --time 10m --parts 8 --warehouses 32 --partition-type 4
+wo  2 jun 2021  6:16:43 CEST
+
+wo  2 jun 2021  6:16:43 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc check --check-all -T 4 --parts 8 --warehouses 32 --partition-type 4
+wo  2 jun 2021  6:16:45 CEST
+
+wo  2 jun 2021  6:16:45 CEST
+Starting component `cluster`: /home/mattias/.tiup/components/cluster/v1.4.4/tiup-cluster clean prune-bench --all -y
++ [ Serial ] - SSHKeySet: privateKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa, publicKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa.pub
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [ Serial ] - StopCluster
+Stopping component alertmanager
+	Stopping instance 192.168.2.62
+	Stop alertmanager 192.168.2.62:9093 success
+Stopping component grafana
+	Stopping instance 192.168.2.62
+	Stop grafana 192.168.2.62:3000 success
+Stopping component prometheus
+	Stopping instance 192.168.2.62
+	Stop prometheus 192.168.2.62:9090 success
+Stopping component tidb
+	Stopping instance 192.168.2.62
+	Stop tidb 192.168.2.62:4000 success
+Stopping component tikv
+	Stopping instance 192.168.2.62
+	Stop tikv 192.168.2.62:20160 success
+Stopping component pd
+	Stopping instance 192.168.2.62
+	Stop pd 192.168.2.62:2379 success
+Stopping component node_exporter
+Stopping component blackbox_exporter
++ [ Serial ] - CleanupCluster
+Cleanup instance 192.168.2.62
+Cleanup 192.168.2.62 success
+Cleanup cluster `prune-bench` successfully
+Starting component `cluster`: /home/mattias/.tiup/components/cluster/v1.4.4/tiup-cluster start prune-bench
+Starting cluster prune-bench...
++ [ Serial ] - SSHKeySet: privateKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa, publicKey=/home/mattias/.tiup/storage/cluster/clusters/prune-bench/ssh/id_rsa.pub
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [Parallel] - UserSSH: user=tidb, host=192.168.2.62
++ [ Serial ] - StartCluster
+Starting component pd
+	Starting instance pd 192.168.2.62:2379
+	Start pd 192.168.2.62:2379 success
+Starting component node_exporter
+	Starting instance 192.168.2.62
+	Start 192.168.2.62 success
+Starting component blackbox_exporter
+	Starting instance 192.168.2.62
+	Start 192.168.2.62 success
+Starting component tikv
+	Starting instance tikv 192.168.2.62:20160
+	Start tikv 192.168.2.62:20160 success
+Starting component tidb
+	Starting instance tidb 192.168.2.62:4000
+	Start tidb 192.168.2.62:4000 success
+Starting component prometheus
+	Starting instance prometheus 192.168.2.62:9090
+	Start prometheus 192.168.2.62:9090 success
+Starting component grafana
+	Starting instance grafana 192.168.2.62:3000
+	Start grafana 192.168.2.62:3000 success
+Starting component alertmanager
+	Starting instance alertmanager 192.168.2.62:9093
+	Start alertmanager 192.168.2.62:9093 success
++ [ Serial ] - UpdateTopology: cluster=prune-bench
+Started cluster `prune-bench` successfully
+
+wo  2 jun 2021  6:17:08 CEST
+
+wo  2 jun 2021  6:17:09 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc prepare -T 4 --warehouses 32
+wo  2 jun 2021  6:27:16 CEST
+
+wo  2 jun 2021  6:27:46 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc run -T 4 --time 10m --warehouses 32
+wo  2 jun 2021  6:37:46 CEST
+
+wo  2 jun 2021  6:37:46 CEST
+time /home/mattias/repos/go-tpc/bin/go-tpc tpcc check --check-all -T 4 --warehouses 32
+wo  2 jun 2021  6:37:48 CEST

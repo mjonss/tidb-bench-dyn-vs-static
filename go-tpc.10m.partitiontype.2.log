@@ -1,0 +1,18 @@
+[2021-06-02 05:34:09] execute run failed, err exec SELECT c_discount, c_last, c_credit, w_tax FROM customer, warehouse WHERE w_id = ? AND c_w_id = w_id AND c_d_id = ? AND c_id = ?(wID=17,dID=3,cID=1566) failed sql: no rows in result set
+execute run failed, err exec SELECT c_discount, c_last, c_credit, w_tax FROM customer, warehouse WHERE w_id = ? AND c_w_id = w_id AND c_d_id = ? AND c_id = ?(wID=17,dID=3,cID=1566) failed sql: no rows in result set
+[2021-06-02 05:34:09] execute run failed, err exec SELECT o_id, o_carrier_id, o_entry_d FROM orders WHERE o_w_id = ? AND o_d_id = ? AND o_c_id = ? ORDER BY o_id DESC LIMIT 1 failed sql: no rows in result set
+execute run failed, err exec SELECT o_id, o_carrier_id, o_entry_d FROM orders WHERE o_w_id = ? AND o_d_id = ? AND o_c_id = ? ORDER BY o_id DESC LIMIT 1 failed sql: no rows in result set
+[2021-06-02 05:34:09] execute run failed, err customer for (23, 10, BARPRESEING) not found
+execute run failed, err customer for (23, 10, BARPRESEING) not found
+[2021-06-02 05:34:09] execute run failed, err exec SELECT c_first, c_middle, c_last, c_street_1, c_street_2, c_city, c_state, c_zip, c_phone,
+c_credit, c_credit_lim, c_discount, c_balance, c_since FROM customer WHERE c_w_id = ? AND c_d_id = ? 
+AND c_id = ? FOR UPDATE failed sql: no rows in result set
+execute run failed, err exec SELECT c_first, c_middle, c_last, c_street_1, c_street_2, c_city, c_state, c_zip, c_phone,
+c_credit, c_credit_lim, c_discount, c_balance, c_since FROM customer WHERE c_w_id = ? AND c_d_id = ? 
+AND c_id = ? FOR UPDATE failed sql: no rows in result set
+Finished
+[Summary] NEW_ORDER_ERR - Takes(s): 0.0, Count: 1, TPM: 2099.5, Sum(ms): 17.2, Avg(ms): 17.3, 50th(ms): 17.8, 90th(ms): 17.8, 95th(ms): 17.8, 99th(ms): 17.8, 99.9th(ms): 17.8, Max(ms): 17.8
+[Summary] ORDER_STATUS_ERR - Takes(s): 0.0, Count: 1, TPM: 2473.7, Sum(ms): 22.2, Avg(ms): 22.5, 50th(ms): 23.1, 90th(ms): 23.1, 95th(ms): 23.1, 99th(ms): 23.1, 99.9th(ms): 23.1, Max(ms): 23.1
+[Summary] PAYMENT_ERR - Takes(s): 0.0, Count: 2, TPM: 23643.6, Sum(ms): 87.6, Avg(ms): 44.0, 50th(ms): 41.9, 90th(ms): 48.2, 95th(ms): 48.2, 99th(ms): 48.2, 99.9th(ms): 48.2, Max(ms): 48.2
+0.01user 0.00system 0:00.06elapsed 31%CPU (0avgtext+0avgdata 16388maxresident)k
+0inputs+16outputs (0major+1747minor)pagefaults 0swaps

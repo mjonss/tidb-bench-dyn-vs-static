@@ -1,0 +1,42 @@
+begin to check warehouse 1 at condition 3.3.2.5
+begin to check warehouse 2 at condition 3.3.2.2
+begin to check warehouse 4 at condition 3.3.2.1
+begin to check warehouse 3 at condition 3.3.2.2
+begin to check warehouse 4 at condition 3.3.2.4
+begin to check warehouse 2 at condition 3.3.2.5
+begin to check warehouse 3 at condition 3.3.2.3
+begin to check warehouse 3 at condition 3.3.2.4
+begin to check warehouse 3 at condition 3.3.2.9
+begin to check warehouse 3 at condition 3.3.2.10
+begin to check warehouse 1 at condition 3.3.2.6
+begin to check warehouse 4 at condition 3.3.2.10
+begin to check warehouse 2 at condition 3.3.2.7
+begin to check warehouse 1 at condition 3.3.2.8
+execute check failed, err check warehouse 1 at condition 3.3.2.8 failed count(*) in warehouse 1, but got 1.000000
+begin to check warehouse 3 at condition 3.3.2.11
+begin to check warehouse 3 at condition 3.3.2.1
+begin to check warehouse 3 at condition 3.3.2.6
+begin to check warehouse 2 at condition 3.3.2.9
+begin to check warehouse 3 at condition 3.3.2.7
+begin to check warehouse 2 at condition 3.3.2.10
+begin to check warehouse 4 at condition 3.3.2.12
+begin to check warehouse 3 at condition 3.3.2.8
+execute check failed, err check warehouse 3 at condition 3.3.2.8 failed count(*) in warehouse 3, but got 1.000000
+begin to check warehouse 4 at condition 3.3.2.11
+begin to check warehouse 2 at condition 3.3.2.11
+begin to check warehouse 4 at condition 3.3.2.2
+begin to check warehouse 2 at condition 3.3.2.12
+begin to check warehouse 4 at condition 3.3.2.3
+begin to check warehouse 4 at condition 3.3.2.5
+begin to check warehouse 4 at condition 3.3.2.6
+begin to check warehouse 2 at condition 3.3.2.1
+begin to check warehouse 2 at condition 3.3.2.4
+begin to check warehouse 4 at condition 3.3.2.7
+begin to check warehouse 2 at condition 3.3.2.6
+begin to check warehouse 2 at condition 3.3.2.8
+execute check failed, err check warehouse 2 at condition 3.3.2.8 failed count(*) in warehouse 2, but got 1.000000
+begin to check warehouse 4 at condition 3.3.2.8
+execute check failed, err check warehouse 4 at condition 3.3.2.8 failed count(*) in warehouse 4, but got 1.000000
+Finished
+0.00user 0.00system 0:00.56elapsed 2%CPU (0avgtext+0avgdata 13916maxresident)k
+0inputs+16outputs (0major+1346minor)pagefaults 0swaps

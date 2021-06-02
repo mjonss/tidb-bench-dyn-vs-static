@@ -1,0 +1,44 @@
+begin to check warehouse 4 at condition 3.3.2.1
+begin to check warehouse 2 at condition 3.3.2.5
+begin to check warehouse 3 at condition 3.3.2.6
+begin to check warehouse 1 at condition 3.3.2.9
+begin to check warehouse 4 at condition 3.3.2.6
+begin to check warehouse 2 at condition 3.3.2.6
+begin to check warehouse 1 at condition 3.3.2.10
+begin to check warehouse 4 at condition 3.3.2.9
+begin to check warehouse 3 at condition 3.3.2.8
+begin to check warehouse 4 at condition 3.3.2.10
+begin to check warehouse 1 at condition 3.3.2.12
+begin to check warehouse 3 at condition 3.3.2.9
+begin to check warehouse 3 at condition 3.3.2.1
+begin to check warehouse 3 at condition 3.3.2.2
+begin to check warehouse 2 at condition 3.3.2.7
+begin to check warehouse 3 at condition 3.3.2.5
+begin to check warehouse 3 at condition 3.3.2.10
+begin to check warehouse 1 at condition 3.3.2.2
+begin to check warehouse 1 at condition 3.3.2.4
+begin to check warehouse 4 at condition 3.3.2.2
+begin to check warehouse 4 at condition 3.3.2.3
+begin to check warehouse 4 at condition 3.3.2.4
+begin to check warehouse 1 at condition 3.3.2.5
+begin to check warehouse 1 at condition 3.3.2.6
+begin to check warehouse 2 at condition 3.3.2.8
+begin to check warehouse 4 at condition 3.3.2.5
+begin to check warehouse 4 at condition 3.3.2.7
+begin to check warehouse 2 at condition 3.3.2.10
+begin to check warehouse 3 at condition 3.3.2.11
+execute check failed, err check warehouse 3 at condition 3.3.2.11 failed all of (count(*) from ORDER) - (count(*) from NEW-ORDER) for each district defined by (O_W_ID, O_D_ID) = (NO_W_ID, NO_D_ID) = (C_W_ID, C_D_ID) should be 2100 in warehouse 3
+begin to check warehouse 2 at condition 3.3.2.11
+execute check failed, err check warehouse 2 at condition 3.3.2.11 failed all of (count(*) from ORDER) - (count(*) from NEW-ORDER) for each district defined by (O_W_ID, O_D_ID) = (NO_W_ID, NO_D_ID) = (C_W_ID, C_D_ID) should be 2100 in warehouse 2
+begin to check warehouse 4 at condition 3.3.2.8
+begin to check warehouse 1 at condition 3.3.2.8
+begin to check warehouse 4 at condition 3.3.2.11
+execute check failed, err check warehouse 4 at condition 3.3.2.11 failed all of (count(*) from ORDER) - (count(*) from NEW-ORDER) for each district defined by (O_W_ID, O_D_ID) = (NO_W_ID, NO_D_ID) = (C_W_ID, C_D_ID) should be 2100 in warehouse 4
+begin to check warehouse 1 at condition 3.3.2.1
+begin to check warehouse 1 at condition 3.3.2.3
+begin to check warehouse 1 at condition 3.3.2.7
+begin to check warehouse 1 at condition 3.3.2.11
+execute check failed, err check warehouse 1 at condition 3.3.2.11 failed all of (count(*) from ORDER) - (count(*) from NEW-ORDER) for each district defined by (O_W_ID, O_D_ID) = (NO_W_ID, NO_D_ID) = (C_W_ID, C_D_ID) should be 2100 in warehouse 1
+Finished
+0.00user 0.01system 0:01.62elapsed 0%CPU (0avgtext+0avgdata 13920maxresident)k
+0inputs+16outputs (0major+1344minor)pagefaults 0swaps
